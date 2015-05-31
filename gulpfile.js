@@ -6,7 +6,8 @@
 		concatCss = require("gulp-concat-css"),
 		rename = require("gulp-rename"),
 		minifyCss = require("gulp-minify-css"),
-		autoprefixer = require("gulp-autoprefixer");
+		autoprefixer = require("gulp-autoprefixer"),
+		modernizr = require('gulp-modernizr');
 
 // Запуск сервера с лайврелоадом
 gulp.task('connect', function(){
@@ -36,7 +37,8 @@ gulp.task('css', function(){
 
 // Работа с js
 gulp.task('js', function(){
-	gulp.src('./app/js/*.html')
+	gulp.src('./app/js/*.js')
+	.pipe(modernizr())
 	.pipe(connect.reload());
 });
 

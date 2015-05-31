@@ -1,11 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
-	<title>Potfolio</title>
+	<title>Потфолио</title>
 	<link rel="stylesheet" href="css/main.css">
-</head>
+	<link rel="shortcut icon" href="img/favicon.ico"/>
+	<script type="text/javascript" src="js/modernizr.custom.57296.js"></script>
+</head>	
 <body>
-	<h1>Привет</h1>
+<div class="wrapper clearfix">
+	<header class="page-header">
+		<div class="logo">
+			<a href="" class="logo-link">
+				<img class="logo-img" src="img/logo.png" alt="">
+				<span class="hidden">Потфолио</span>
+			</a>
+		</div>
+		<div class="social-btn">
+			<a class="social-btn-link sprite" href=""><span class="hidden">VK</span></a>
+			<a class="social-btn-link sprite" href=""><span class="hidden">Twitter</span></a>
+			<a class="social-btn-link sprite" href=""><span class="hidden">Facebook</span></a>
+			<a class="social-btn-link sprite" href=""><span class="hidden">Git</span></a>
+		</div>
+	</header>
+	<div class="page-container clearfix">
+		<aside class="navigation">
+			<nav class="navigation-menu">
+				<ul class="navigation-list">
+					<li class="navigation-item active clearfix"><a class="navigation-link" href="">О себе</a></li>
+					<li class="navigation-item clearfix"><a class="navigation-link" href="">Мои работы</a></li>
+					<li class="navigation-item"><a class="navigation-link" href="">Связаться со мной</a></li>
+				</ul>
+			</nav>
+			<div class="contacts">
+				<ul class="contacts-list">
+					<li class="contacts-item">Контакты</li>
+					<li class="contacts-item"><a class="contacts-link" href="mailto:emma.saitgaraeva@gmail.ru">emma.saitgaraeva</a></li>
+					<li class="contacts-item"><a class="contacts-link" href="tel:+79374815725">+79274817925</a></li>
+					<li class="contacts-item"><a class="contacts-link" href="skype:notemka?call">notemka</a></li>
+				</ul>
+			</div>
+		</aside>
+		<div class="page-content">
+			<section class="inf-about-me">
+				<h1 class = "block-title">Основная информация</h1>
+				<div class="inf-wrapper">
+					<div class="photo-wpapper">
+						<img src="img/photo.jpg" alt="" class="photo">
+					</div>
+					<ul class="inf-list">
+						<li class="inf-title">Меня зовут:</li>
+						<li class="inf-value">Хайруллина Эмма Раисовна</li>
+						<li class="inf-title">Мой возраст:</li>
+						<li class="inf-value">24 года</li>
+						<li class="inf-title">Мой город:</li>
+						<li class="inf-value">Казань, Россия</li>
+						<li class="inf-title">Моя специализация:</li>
+						<li class="inf-value">Frontend разработчик</li>
+						<li class="inf-title">Ключевые навыки:</li>
+						<li class="inf-value">
+							<ul class="skills-list">
+								<li class="skill">html</li>
+								<li class="skill">css</li>
+								<li class="skill">javascript</li>
+								<li class="skill">gulp</li>
+								<li class="skill">git</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="inf-about-me">
+				<h1 class = "block-title">Опыт работы</h1>
+				<ul class="jobs-list">
+					<li class="job-item">
+						<span class="org-name">ООО "Системы документооборота"</span>
+						<span class="job-period">Июнь 2013 - 2015</span>
+					</li>
+					<li class="job-item">
+						<span class="org-name">ООО "Системы документооборота"</span>
+						<span class="job-period">Июнь 2013 - 2015</span>
+					</li>
+				</ul>
+			</section>
+			<section class="inf-about-me">
+				<h1 class = "block-title">Образование</h1>
+				<ul class="education-list">
+					<li class="education-item">
+						<span class="org-name">Высшее, ИЭУП (АФ)</span>
+						<span class="edu-period">2008 - 2013</span>
+					</li>
+					<li class="education-item">
+						<span class="edu-org-name">Курсы Loftschool</span>
+						<span class="edu-period">Май 2015 - июль 2015</span>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+</div>
+<footer class="page-footer">
+	<div class="footer-box">
+		<a class="login-btn sprite" href="">
+			<span class="hidden">Войти</span>
+		</a>
+		<p class="footer-inf">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
+	</div>
+</footer>
 </body>
 </html>
