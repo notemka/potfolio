@@ -1,6 +1,5 @@
 ﻿@import url("fonts.css");
 @import url("../bower/normalize-css/normalize.css");
-@import url("ie.css");
 .clearfix:after,.clearfix:before{
 	content: ' ';
 	display: table;
@@ -31,7 +30,9 @@ html, body{
 /****** HEADER ******/
 
 .wrapper{
-	min-height:100%;
+	max-width:1400px;
+	min-width: 960px;
+	min-height: 100%;
 	margin-bottom: -83px;
 }
 	.wrapper:after{
@@ -41,53 +42,54 @@ html, body{
 	background: url(../img/border.png) no-repeat 50% 100% #eff3f7;
     height: 122px;
     line-height: 122px;
-    width: 100%;
     margin-bottom: 40px;
+}
+.header-wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
 }
 	.logo{
 		float: left;
-		margin-left: 100px;
 	}
 		.logo-img{
 			vertical-align: middle;	
 		}
 	.social-btn{
-		float: right;
-		margin-right: 100px;		
+		float: right;	
 	}
 		.social-btn-link{
-			margin-left: 10px;
+			margin-left: 30px;
 			display: inline-block;
 			vertical-align: middle;
 			width: 47px;
 			height: 47px;
 		}
-			.social-btn-link:first-child{
+			.vk{
 				margin-left:0px;
 				background-position: -145px -119px;
 			}
-				.social-btn-link:first-child:hover{
+				.vk:hover{
 					background-position: -5px -176px;
 				}
-			.social-btn-link:nth-of-type(2){
+			.twitter{
 				background-position: -175px -5px;
 				
 			}
-				.social-btn-link:nth-of-type(2):hover{
+				.twitter:hover{
 					background-position: -176px -62px;
 					
 				}
-			.social-btn-link:nth-of-type(3){
+			.facebook{
 				background-position: -118px -5px;
 			}
-				.social-btn-link:nth-of-type(3):hover{
+				.facebook:hover{
 					background-position: -5px -62px;
 					
 				}
-			.social-btn-link:nth-of-type(4){
+			.git{
 				background-position: -62px -62px;
 			}
-				.social-btn-link:nth-of-type(4):hover{
+				.git:hover{
 					background-position: -119px -62px;
 					
 				}
@@ -105,7 +107,6 @@ html, body{
 	.navigation{
 		width: 250px;
 		float: left;
-		margin-right: 30px;
 	}
 		.navigation-menu{
 			margin-bottom: 30px;
@@ -147,7 +148,7 @@ html, body{
 							color: #fff;
 						}
 	.contacts{
-
+		border-radius:5px;
 	}
 		.contacts-list{
 			list-style: none;
@@ -155,7 +156,6 @@ html, body{
 			margin: 0;
 		}
 			.contacts-item{
-				padding: 10px;
 				font-size: 17px;
 			}
 			.contacts-item:first-child{
@@ -164,60 +164,24 @@ html, body{
 				border-radius:5px 5px 0 0;
 				font-size: 21px;
 				color: #fff;
+				padding: 5px 0 5px 15px; 
 			}
 
-			.contacts-item:nth-of-type(2){
-				background: #41b9d4;
+			.contacts-item.email{
+				background: url(../img/email.png) no-repeat 15% 50% #41b9d4;
 			}
-				.contacts-item:nth-of-type(2):before{
-					content: ' ';
-					display: inline-block;
-					position: relative;
-					top: 3px;
-					left: 20px;
-					background-image: url(../img/spritesheet.png);
-					background-repeat: no-repeat;
-					width: 21px;
-					height: 16px;
-					background-position: -87px -5px;
-				}
-			.contacts-item:nth-of-type(3){
-				background: #48cbe8;
+			.contacts-item.telephone{
+				background: url(../img/telephone.png) no-repeat 15% 50% #48cbe8;
 			}
-				.contacts-item:nth-of-type(3):before{
-					content: ' ';
-					display: inline-block;
-					position: relative;
-					top: 3px;
-					left: 20px;
-					background-image: url(../img/spritesheet.png);
-					background-repeat: no-repeat;
-					width: 19px;
-					height: 22px;
-					background-position: -116px -119px;
-					
-				}
-			.contacts-item:nth-of-type(4){
-				background: #51daf8;
-				border-radius: 0 0 5px 5px;
+			.contacts-item.skype{
+				background: url(../img/skype.png) no-repeat 15% 50% #51daf8;	
+				border-radius: 0 0 5px 5px;		
 			}
-				.contacts-item:nth-of-type(4):before{
-					content: ' ';
-					display: inline-block;
-					position: relative;
-					top: 3px;
-					left: 20px;
-					background-image: url(../img/spritesheet.png);
-					background-repeat: no-repeat;
-					width: 20px;
-					height: 20px;
-					background-position: -86px -119px;
-					
-				}
 				.contacts-link{
 					text-decoration: none;
 					color: #fff;
-					margin-left: 40px;
+					padding: 5px 0 5px 70px;
+					display:block;
 				}
 				.contacts-link:hover{
 					text-decoration: underline;
@@ -228,29 +192,31 @@ html, body{
 
 	.page-content{
 		float: right;
-		width: 670px;
+		width: 650px;
 	}
 		.inf-about-me{
 			margin-bottom: 30px;
 			background: #eff3f7;
 			border-radius:5px;
-			padding-bottom: 20px;
 		}
 		.block-title{
 			display: inline-block;
 			font-size: 27px;
+			font-weight: 400;
 			margin: 0;
-			padding: 20px;
+			padding: 10px 20px;
 			color: #3ba8c0;
 			border-bottom: 2px solid #3ba8c0;
 		}
 		.inf-wrapper{
 			margin: 0 0 0 30px;
-			padding-top: 20px;
+			padding: 15px 0 15px 0;
+			margin-left: 60px;
+			overflow: hidden;
 		}
 		.photo-wpapper{
 			float: left;
-			margin: 0px 30px 0 0;
+			margin: 0px 20px 0 0;
 			border-radius: 50%;
 			width: 155px;
 			height: 155px;
@@ -267,19 +233,20 @@ html, body{
 			margin: 0;
 			padding: 0;
 			line-height: 2.2em;
+			width: 400px;
+			float: right;
 		}
 			.inf-title{
-				margin-right: 15px;
+				margin-right: 20px;
 				float: left;
 				font-family: 'fira_sansmedium';
 			}
 			.inf-value{
 				font-size: 15px;
+				max-width: 225px;
+				margin: 0;
+				overflow:hidden;
 			}
-				.inf-value:last-child{
-					width: 200px;
-					display: inline-block;
-				}
 			.skills-list{
 				list-style: none;
 				margin: 0;
@@ -304,56 +271,33 @@ html, body{
 				}
 		.jobs-list, .education-list{
 			list-style: none;
-			padding: 0;
-			margin: 0;
+			padding: 0 0 15px 0;
+			margin: 20px 0 0 0;
 			line-height: 1.2em;
+			margin-left: 60px;
 		}
-			.job-item, .education-item{
-				margin-left: 30px;
+			.job-item{
+				background: url(../img/bag.png) no-repeat left center;
+				padding: 0 20px 0 70px;
+				margin-bottom: 20px;
 			}
-			.job-item:before{
-				content: ' ';
-				display: inline-block;
-				position: relative;
-				top: 20px;
-				margin-right: 20px;
-				background-image: url('../img/spritesheet.png');
-				background-repeat: no-repeat; 
-				background-position: -5px -5px;
-				width: 36px;
-				height: 34px;
-				line-height: 34px;
+			.education-item:first-child{
+				background: url(../img/hat.png) no-repeat left center;
 			}
-				.job-period{
-					position:relative;
-					left: 60px;
-					display: block;
+			.education-item{
+				background: url(../img/doc.png) no-repeat 2% center;
+				padding: 0 20px 0 70px;
+				margin-bottom: 20px;
+			}
+				.job-period, .edu-period{
 					font-size: 15px;
 				}
-			.education-item:before{
-				content: ' ';
-				display: inline-block;
-				position: relative;
-				top: 20px;
-				margin-right: 20px;
-				background-image: url('../img/spritesheet.png');
-				background-repeat: no-repeat;
-			    background-position: -51px -5px;
-			    width: 26px;
-			    height: 32px;
-				line-height: 34px;
-			}
-				.edu-period{
-					position:relative;
-					left: 50px;
-					display: block;
-					font-size: 0.9em;
-				}
+
 /****** FOOTER ******/
 	
 .page-footer{
+    min-width: 960px;
 	margin-top: -83px;
-	width: 100%;
 	height: 83px;
 	background: url(../img/border.png) no-repeat 50% 0% #eff3f7;
 	font-family: 'fira_sanslight';

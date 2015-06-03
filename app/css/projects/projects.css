@@ -1,0 +1,75 @@
+﻿.page-content{
+	background: #eff3f7;
+	border-radius:5px;
+	float: right;
+	width: 670px;
+	min-height:100%;
+}
+.block-title{
+	display: inline-block;
+	font-size: 27px;
+	font-weight: 400;
+	margin: 0 0 30px 0; 
+	padding: 20px;
+	color: #3ba8c0;
+	border-bottom: 2px solid #3ba8c0;
+}
+.projects-list{
+	list-style: none;
+	padding: 0 20px;
+	margin: 0;
+}
+	.project-item{
+		display: inline-block;
+	}
+	.project-link{
+		width: 183px;
+		height: 129px;
+		margin: 0 20px 20px 0;
+		border-radius: 5px;
+		border: 2px solid #3ba8c0;
+		display: block;
+		text-decoration: none;
+	}
+		.project-link:hover{
+			box-shadow: 0 0 300px rgba(1, 108, 164, .7) inset/* #1a6e95 */;
+		}
+			.site-img{
+				width: 100%;
+			}
+	
+	/*** информация о сайте ***/
+	
+	.project-inf-wrapper{
+		overflow: hidden;
+		text-align: center;
+	}
+		.site-name{
+			color:#3ba8c0;
+			text-decoration: none;
+		}
+		.site-inf{
+			
+		}
+	
+	/*** пункт добавления ***/
+
+.project-item:last-child{
+	border: 1px dashed #3ba8c0;
+}
+.add-project-link{
+	display: block;
+	width: 183px;
+	height: 129px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+	.add-site-img{
+		width: 32px;
+		height: 32px;
+		margin: 0;
+	}
+	.add-link{
+		
+	}
+	
