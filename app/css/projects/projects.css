@@ -21,18 +21,19 @@
 }
 	.project-item{
 		display: inline-block;
+		margin: 0 20px 20px 0;
 	}
 	.project-link{
 		width: 183px;
 		height: 129px;
-		margin: 0 20px 20px 0;
 		border-radius: 5px;
 		border: 2px solid #3ba8c0;
 		display: block;
 		text-decoration: none;
 	}
 		.project-link:hover{
-			box-shadow: 0 0 300px rgba(1, 108, 164, .7) inset/* #1a6e95 */;
+			background-color: rgba(1, 108, 164, .7);
+			/*box-shadow: 0 0 300px rgba(1, 108, 164, .7) inset;*/
 		}
 			.site-img{
 				width: 100%;
@@ -56,18 +57,19 @@
 
 .project-item:last-child{
 	border: 1px dashed #3ba8c0;
+	border-radius: 5px;
+	width: 183px;
+	height: 129px;
 }
 .add-project-link{
 	display: block;
-	width: 183px;
-	height: 129px;
+	text-align: center;
 	text-decoration: none;
-	border-radius: 5px;
 }
 	.add-site-img{
 		width: 32px;
 		height: 32px;
-		margin: 0;
+		margin: 35px 0 0 0;
 	}
 	.add-link{
 		
