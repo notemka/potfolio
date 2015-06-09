@@ -1,0 +1,78 @@
+.form-contacts-title{
+	background:#48cbe8;
+	color:#fff;
+	text-align: center;
+	font-weight: 400;
+	font-size: 27px;
+	margin: 0 0 20px 0;
+	padding: 20px 0;
+	border-bottom: 20px solid #67dffa;
+}
+.contacts-form{
+	margin: 0 auto;
+	width: 450px;
+}
+.name-box, .email-box{
+	display: inline-block;
+	width: 190px;
+	margin: 0;
+}
+.email-box{
+	float:right;
+}
+.form-list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;	
+}
+.form-item{
+	margin-bottom: 20px;
+	display: inline-block;
+	width: 100%;
+}
+.name-field,.email-field,.message-field, .img-code, .capcha{
+	padding: 5px;
+	border: 1px solid #54ceea;
+	border-radius: 5px;
+}
+.email-field{
+	float: right;
+	width: 190px;
+}
+.message-field{
+	height: 180px;
+	width: 100%;
+}
+.capcha{
+	width: 190px;
+	height: 85px;
+	background: #fff;
+	margin: 0;
+	display: inline-block;
+	overflow: hidden;
+}
+	.g-recaptcha{
+		width: 190px;
+	}
+.img-code{
+	float:right;
+}
+.send-btn, .clear-btn{
+	display: block;
+	float: left;
+	margin: 0 auto;
+	padding: 0 15px;
+	color:#fff;
+	font-size:19px;
+	font-family: 'fira_sansbook';
+	border: none;
+	border-radius: 5px;
+	background-color: #48cbe8;
+	box-shadow: 0 4px 0 #3ba8c0;
+}
+.clear-btn{
+	background:#849db5;
+	box-shadow: 0 4px #687b8f;
+	float: right;
+}

@@ -29,9 +29,9 @@
 		<aside class="navigation">
 			<nav class="navigation-menu">
 				<ul class="navigation-list">
-					<li class="navigation-item active"><a class="navigation-link" href="">Обо мне</a></li>
-					<li class="navigation-item"><a class="navigation-link" href="">Мои работы</a></li>
-					<li class="navigation-item"><a class="navigation-link" href="">Связаться со мной</a></li>
+					<li class="navigation-item active"><a class="navigation-link" href="index.html">Обо мне</a></li>
+					<li class="navigation-item"><a class="navigation-link" href="projects.html">Мои работы</a></li>
+					<li class="navigation-item"><a class="navigation-link" href="contacts.html">Связаться со мной</a></li>
 				</ul>
 			</nav>
 			<div class="contacts">
@@ -50,36 +50,38 @@
 					<div class="photo-wpapper">
 						<img src="img/photo.jpg" alt="" class="photo">
 					</div>
-					<ul class="inf-list">
-						<li class="inf-item">
-							<div class="inf-title">Меня зовут:</div>
-							<div class="inf-value">Хайруллина Эмма Раисовна</div>
-						</li>
-						<li class="inf-item">
-							<div class="inf-title">Мой возраст:</div>
-							<div class="inf-value">24 года</div>
-						</li>
-						<li class="inf-item">
-							<div class="inf-title">Мой город:</div>
-							<div class="inf-value">Казань, Россия</div>
-						</li>
-						<li class="inf-item">
-							<div class="inf-title">Моя специализация:</div>
-							<div class="inf-value">Frontend разработчик</div>
-						</li>
-						<li class="inf-item">
-							<div class="inf-title">Ключевые навыки:</div>
-							<div class="inf-value">
-								<ul class="skills-list">
-									<li class="skill">html</li>
-									<li class="skill">css</li>
-									<li class="skill">javascript</li>
-									<li class="skill">gulp</li>
-									<li class="skill">git</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
+					<div class="inf-list-wrapper">
+						<ul class="inf-list">
+							<li class="inf-item clearfix">
+								<div class="inf-title">Меня зовут:</div>
+								<div class="inf-value">Хайруллина Эмма Раисовна</div>
+							</li>
+							<li class="inf-item clearfix">
+								<div class="inf-title">Мой возраст:</div>
+								<div class="inf-value">24 года</div>
+							</li>
+							<li class="inf-item clearfix">
+								<div class="inf-title">Мой город:</div>
+								<div class="inf-value">Казань, Россия</div>
+							</li>
+							<li class="inf-item clearfix">
+								<div class="inf-title">Моя специализация:</div>
+								<div class="inf-value">Frontend разработчик</div>
+							</li>
+							<li class="inf-item clearfix">
+								<div class="inf-title">Ключевые навыки:</div>
+								<div class="inf-value">
+									<ul class="skills-list">
+										<li class="skill">html</li>
+										<li class="skill">css</li>
+										<li class="skill">javascript</li>
+										<li class="skill">gulp</li>
+										<li class="skill">git</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 			<section class="inf-about-me">
@@ -113,11 +115,13 @@
 </div>
 <footer class="page-footer">
 	<div class="footer-box">
-		<a class="login-btn sprite" href="">
+		<a class="login-btn sprite" href="authorization.html">
 			<span class="hidden">Войти</span>
 		</a>
 		<p class="footer-inf">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
 	</div>
 </footer>
+<script src="bower/jquery/dist/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

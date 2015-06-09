@@ -1,27 +1,28 @@
-﻿.page-content{
+﻿.over-content{
 	background: #eff3f7;
 	border-radius:5px;
-	float: right;
-	width: 670px;
 	min-height:100%;
+	margin-bottom: 30px;
+	overflow: hidden;
 }
-.block-title{
+.over-block-title{
+	margin-bottom: 30px;
 	display: inline-block;
 	font-size: 27px;
 	font-weight: 400;
-	margin: 0 0 30px 0; 
-	padding: 20px;
+	padding: 10px 20px;
 	color: #3ba8c0;
 	border-bottom: 2px solid #3ba8c0;
 }
 .projects-list{
 	list-style: none;
-	padding: 0 20px;
+	padding: 0;
 	margin: 0;
 }
 	.project-item{
 		display: inline-block;
-		margin: 0 20px 20px 0;
+		margin: 0 0 50px 20px;
+		overflow: hidden;
 	}
 	.project-link{
 		width: 183px;
@@ -30,10 +31,31 @@
 		border: 2px solid #3ba8c0;
 		display: block;
 		text-decoration: none;
+		margin-bottom: 15px;
+		position: relative;
 	}
-		.project-link:hover{
+		.project-link:hover .animate-block{
+			display: block;
+		}
+		.animate-block{
+			display:none;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			color:#fff;
+			text-align: center;
 			background-color: rgba(1, 108, 164, .7);
-			/*box-shadow: 0 0 300px rgba(1, 108, 164, .7) inset;*/
+		}
+		.animate-block-name{
+			display: inline-block;
+			width: 100px;
+			margin: 45px auto;
+			padding: 5px;
+			border: 2px solid #fff;
+			border-radius: 5px;
+			font-size: 12px;
 		}
 			.site-img{
 				width: 100%;
@@ -48,30 +70,199 @@
 		.site-name{
 			color:#3ba8c0;
 			text-decoration: none;
+			font-family: 'fira_sanslight_italic';
+			font-size: 13px;
 		}
 		.site-inf{
-			
+			font-family: 'fira_sanslight';
+			font-size: 15px;
 		}
 	
 	/*** пункт добавления ***/
 
-.project-item:last-child{
+.add-project-item{
 	border: 1px dashed #3ba8c0;
 	border-radius: 5px;
-	width: 183px;
-	height: 129px;
+	vertical-align: top;
 }
 .add-project-link{
 	display: block;
+	width: 183px;
+	height: 129px;
 	text-align: center;
 	text-decoration: none;
+	background: url(../../img/add-img.png) no-repeat center 35% #edf8fc;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	position: relative;
 }
-	.add-site-img{
-		width: 32px;
-		height: 32px;
-		margin: 35px 0 0 0;
+	.add-project-link > span{
+		position: absolute;
+		top: 70px;
+		left: 40px;
+		color:#3ba8c0;
+		display: block;
 	}
-	.add-link{
-		
+
+/************ MODAL WINDOW ************/
+
+.overlay{
+	background-color: rgba(0, 5, 15, .6);
+	min-width: 100%;
+	min-height: 100%;
+	position:fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	visibility: hidden;
+}
+.overlay:target{
+	visibility: visible;
+}
+.modal-window{
+	margin: 60px auto 0;
+	width: 370px;
+	background: #eff3f7;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px #000;
+	overflow: hidden;
+}
+.add-form-title{
+	font-family: 'fira_sansregular', sans-serif;
+	font-size: 25px;
+	background:#48cbe8;
+	color:#fff;
+	font-weight: 400;
+	margin: 0 0 20px 0;
+	padding: 10px;
+	border-bottom: 10px solid #67dffa;	
+}
+	.close-modalwin{
+		float:right;
+		text-decoration: none;
+		border-radius: 50%;
+		border: 2px solid #fff;
+		color: #fff;
+		font-size: 18px;
+		padding: 0 11px;
+		position:relative;
 	}
-	
+.field-wrapper{
+	margin: 0 auto;
+	width: 325px;
+}
+.label-for-input{
+	display: block;
+	color: #9ba0ad;
+}
+.project-name-field, .project-img-field, .project-url-field, .project-description-field, .file-btn-text{
+	border: 1px solid #48cbe8;
+	width: 325px;
+	text-indent: 10px;
+	padding: 5px 0;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.project-description-field{
+	height: 115px;
+}
+input::-webkit-input-placeholder{
+	color:#54ceea;
+	font-size:13px;
+	font-family: 'fira_sanslight';
+}
+input:-moz-placeholder{
+	color:#54ceea; 
+	font-size:13px;
+	font-family: 'fira_sanslight';
+}
+textarea::-webkit-input-placeholder{
+	color:#54ceea;
+	font-size:13px;
+	font-family: 'fira_sanslight';
+}
+textarea:-moz-placeholder{
+	color:#54ceea; 
+	font-size:13px;
+	font-family: 'fira_sanslight';
+}
+.add-project-btn{
+	margin-bottom: 30px;
+	margin-left: 90px;
+	padding: 0;
+	width: 148px;
+	font-weight: 400;
+	color:#fff;
+	font-size:19px;
+	font-family: 'fira_sansbook';
+	border: none;
+	border-radius: 5px;
+	background-color: #48cbe8;
+	box-shadow: 0 3px 0 #3ba8c0;
+}
+
+/****** стилизация input-file ******/
+
+.file-btn-name{
+	display: block;
+}
+.file-btn-text{
+	display: block;
+	background: url(../../img/upload-img.png) no-repeat right center #fff;
+	color: #48cbe8;
+	text-indent: 10px;
+	padding: 7px 0;
+	font-size: 13px;
+	font-family: 'fira_sanslight';
+}
+.project-img-field{
+	display: none;
+}
+
+/************ form alerts *************/
+
+
+.error-box{
+	background: #f2cccd;
+	color: #f97e76;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	display: none;
+}
+.close-error-alert{
+	text-decoration: none;
+	float:right;
+	color: #f97e76;
+}
+.success-alert{
+	height: 110px;
+	width: 370px;
+	position: absolute;
+	top: 230px;
+	left: 490px;
+	background: #eff3f7;
+	border-radius: 5px;
+	box-shadow: 0 0 15px #999;
+	display: none;
+}
+.success-alert-box{
+	background: #b8e1ce;
+	color:#49bb7b;
+	width: 315px;
+	padding: 5px 10px;
+	margin: 20px auto;
+	border-radius: 5px;
+}
+.success-text, .error-text{
+	font-size: 25px;	
+}
+.success-inf, .error-inf{
+	font-size: 15px;
+}
+.close-alert{
+	color:#49bb7b;
+	text-decoration: none;
+	float:right;
+}

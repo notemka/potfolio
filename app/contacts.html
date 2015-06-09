@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<title>Потфолио</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="shortcut icon" href="img/favicon.ico"/>
+	<script type="text/javascript" src="js/modernizr.custom.57296.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+</head>	
+<body>
+<div class="wrapper clearfix">
+	<header class="page-header">
+		<div class="header-wrapper">
+			<div class="logo">
+				<a href="" class="logo-link">
+					<img class="logo-img" src="img/logo.png" alt="">
+					<span class="hidden">Потфолио</span>
+				</a>
+			</div>
+			<div class="social-btn">
+				<a class="social-btn-link sprite vk" href=""><span class="hidden">VK</span></a>
+				<a class="social-btn-link sprite twitter" href=""><span class="hidden">Twitter</span></a>
+				<a class="social-btn-link sprite facebook" href=""><span class="hidden">Facebook</span></a>
+				<a class="social-btn-link sprite git" href=""><span class="hidden">Git</span></a>
+			</div>
+		</div>
+	</header>
+	<div class="page-container clearfix">
+		<aside class="navigation">
+			<nav class="navigation-menu">
+				<ul class="navigation-list">
+					<li class="navigation-item active"><a class="navigation-link" href="index.html">Обо мне</a></li>
+					<li class="navigation-item"><a class="navigation-link" href="projects.html">Мои работы</a></li>
+					<li class="navigation-item"><a class="navigation-link" href="contacts.html">Связаться со мной</a></li>
+				</ul>
+			</nav>
+			<div class="contacts">
+				<ul class="contacts-list">
+					<li class="contacts-item">Контакты</li>
+					<li class="contacts-item email"><a class="contacts-link" href="mailto:emma.saitgaraeva@gmail.ru">emma.saitgaraeva</a></li>
+					<li class="contacts-item telephone"><a class="contacts-link" href="tel:+79374815725">+79274817925</a></li>
+					<li class="contacts-item skype"><a class="contacts-link" href="skype:notemka?call">notemka</a></li>
+				</ul>
+			</div>
+		</aside>
+		<div class="page-content over-content clearfix">
+			<div class="form-contacts-title">
+				У вас интересный проект? Напишите мне
+			</div>
+			<form action="POST" class="contacts-form">
+				<ul class="form-list">
+					<li class="form-item">
+						<div class="name-box clearfix">
+							<label for="name" class="label-for-input">Имя</label>
+							<input type="text" name="name" class="name-field" placeholder="Как к вам обращаться">
+						</div>
+						<div class="email-box">
+							<label for="email" class="label-for-input">Email</label>
+							<input type="email" name="email" class="email-field" placeholder="Куда мне писать">
+						</div>
+					</li>
+					<li class="form-item">
+						<label for="message" class="label-for-input">Сообщение</label>
+						<textarea name="message" id="" class="message-field" placeholder="Кратко в чем суть"></textarea>
+					</li>
+					<li class="form-item">
+						<label for="capcha-block" class="label-for-input">Введите код, указанный на картинке</label>
+						<div class="capcha" id="capcha-block">
+							<div class="g-recaptcha" data-sitekey="6LeUDggTAAAAAN_g517BW-UfDpITb9b3lCjgk309"></div>
+						</div>
+						<input type="text" class="img-code" placeholder="Введите код">
+					</li>
+					<li class="form-item">
+						<input type="submit" class="send-btn" value="Отправить">
+						<input type="reset" class="clear-btn"  value="Очистить">
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+</div>
+<footer class="page-footer">
+	<div class="footer-box">
+		<a class="login-btn sprite" href="authorization.html">
+			<span class="hidden">Войти</span>
+		</a>
+		<p class="footer-inf">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
+	</div>
+</footer>
+<script src="bower/jquery/dist/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
