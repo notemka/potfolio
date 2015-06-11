@@ -8,5 +8,8 @@
     "gulp-modernizr": "^1.0.0-alpha",
     "gulp-rename": "^1.2.2",
     "opn": "^1.0.2"
+  },
+  "dependencies": {
+    "jquery-placeholder": "^2.1.1"
   }
 }

@@ -37,21 +37,29 @@
 		.project-link:hover .animate-block{
 			display: block;
 		}
+		.project-link:hover .animate-block-name{
+			display: inline-block;
+		}
 		.animate-block{
 			display:none;
 			overflow: hidden;
 			width: 100%;
 			height: 100%;
 			position: absolute;
+			z-index: 3;
 			top: 0;
-			color:#fff;
 			text-align: center;
 			background-color: rgba(1, 108, 164, .7);
 		}
 		.animate-block-name{
-			display: inline-block;
+			position: absolute;
+			top: 40px;
+			left: 35px;
+			z-index: 4;
+			display: none;
 			width: 100px;
-			margin: 45px auto;
+			color:#fff;
+			/*margin: 50px auto;*/
 			padding: 5px;
 			border: 2px solid #fff;
 			border-radius: 5px;
@@ -106,21 +114,34 @@
 
 /************ MODAL WINDOW ************/
 
-.overlay{
-	background-color: rgba(0, 5, 15, .6);
-	min-width: 100%;
-	min-height: 100%;
+.popup-win{
 	position:fixed;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	visibility: hidden;
+	min-width: 100%;
+	min-height: 100%;
+	display: none;	
+	z-index:5;
 }
-.overlay:target{
-	visibility: visible;
+.popup-win:target{
+	display: block;
+}
+.overlay{
+	background-color: rgba(0, 5, 15, .6);
+	position:absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index:10;
 }
 .modal-window{
+	position:relative;
+	z-index:15;
 	margin: 60px auto 0;
 	width: 370px;
 	background: #eff3f7;
@@ -144,7 +165,7 @@
 		border-radius: 50%;
 		border: 2px solid #fff;
 		color: #fff;
-		font-size: 18px;
+		font-size: 16px;
 		padding: 0 11px;
 		position:relative;
 	}
@@ -216,8 +237,16 @@ textarea:-moz-placeholder{
 	font-size: 13px;
 	font-family: 'fira_sanslight';
 }
+.file-label{
+	position: relative;
+}
 .project-img-field{
-	display: none;
+	position: absolute;
+	top: 22px;
+	left: 0;
+	z-index: 15;
+	opacity: 0;
+	width: 100%;
 }
 
 /************ form alerts *************/
