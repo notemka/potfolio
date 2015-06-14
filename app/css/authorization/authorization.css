@@ -1,7 +1,12 @@
 ﻿.form-wrapper{
-	margin: 40px auto;
-	width: 600px;
-	height: 490px;
+	position:absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 592px;
+	height: 485px;
 	background-color: #eff3f7;
 	overflow: hidden;
 	border-radius: 5px;
@@ -13,9 +18,9 @@
 	text-align: center;
 	font-weight: 400;
 	font-size: 40px;
-	margin: 0 0 20px 0;
-	padding: 20px 0;
-	border-bottom: 20px solid #67dffa;
+	margin: 0 0 15px 0;
+	padding: 15px 0;
+	border-bottom: 15px solid #67dffa;
 }
 .authorization-form{
 	margin: 0 auto;
@@ -30,24 +35,28 @@
 	font-family: 'fira_sanslight';
 }
 .login-field, .password-field{
-	color:#959aa8;
-	margin-bottom: 30px;
-	width: 430px;
+	color:#54ceea; 
 	text-indent: 10px;
-	padding: 10px 0;
+	font-size: 17px;
+	margin-bottom: 10px;
+	width: 425px;
+	text-indent: 10px;
+	padding: 17px 0;
 	border: 1px solid #54ceea;
 	border-radius: 3px;
+}
+.password-field{
+	margin-bottom: 32px;
 }
 .enter-btn{
 	display: block;
 	margin: 0 auto;
-	width: 230px;
-	/*padding: 0 30px;*/
+	width: 225px;
 	color:#fff;
 	font-size:36px;
 	font-family: 'fira_sansbook';
 	border: none;
-	border-radius: 5px;
+	border-radius: 10px;
 	background-color: #48cbe8;
-	box-shadow: 0 4px 0 #3ba8c0;
+	box-shadow: 0 3px 0 #3ba8c0;
 }

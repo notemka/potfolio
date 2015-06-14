@@ -3,7 +3,9 @@
   "dependencies": {
     "jquery": "1.11",
     "normalize-css": "~3.0.3",
-    "modernizr-browser": "~1.0.1"
+    "modernizr-browser": "~1.0.1",
+    "qtip2": "~2.2.1",
+    "jquery-placeholder": "~2.1.2"
   },
   "devDependencies": {
     "jquery-placeholder": "~2.1.2"

@@ -6,7 +6,7 @@
 	overflow: hidden;
 }
 .over-block-title{
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	display: inline-block;
 	font-size: 27px;
 	font-weight: 400;
@@ -21,17 +21,22 @@
 }
 	.project-item{
 		display: inline-block;
-		margin: 0 0 50px 20px;
+		margin: 0 0 40px 20px;
+		text-align: center;
+		vertical-align: top;
 		overflow: hidden;
+	}
+	.project-item-wrap{
+		margin-top: 0;
 	}
 	.project-link{
 		width: 183px;
 		height: 129px;
+		/*margin-top: 0;*/
 		border-radius: 5px;
 		border: 2px solid #3ba8c0;
 		display: block;
 		text-decoration: none;
-		margin-bottom: 15px;
 		position: relative;
 	}
 		.project-link:hover .animate-block{
@@ -59,7 +64,6 @@
 			display: none;
 			width: 100px;
 			color:#fff;
-			/*margin: 50px auto;*/
 			padding: 5px;
 			border: 2px solid #fff;
 			border-radius: 5px;
@@ -71,20 +75,23 @@
 	
 	/*** информация о сайте ***/
 	
-	.project-inf-wrapper{
+	.project-inf{
+		width: 183px;
+		margin: 0;
 		overflow: hidden;
+		line-height:1.3em;
+		font-family: 'fira_sanslight';
+		font-size: 15px;
 		text-align: center;
+		word-wrap:break-word;
 	}
-		.site-name{
-			color:#3ba8c0;
-			text-decoration: none;
-			font-family: 'fira_sanslight_italic';
-			font-size: 13px;
-		}
-		.site-inf{
-			font-family: 'fira_sanslight';
-			font-size: 15px;
-		}
+	.site-name{
+		color:#3ba8c0;
+		text-decoration: none;
+		font-family: 'fira_sanslight_italic';
+		font-size: 13px;
+		word-wrap:break-word;
+	}
 	
 	/*** пункт добавления ***/
 
@@ -114,7 +121,10 @@
 
 /************ MODAL WINDOW ************/
 
-.popup-win{
+.popup-modal-win{
+	display: none;	
+}
+.popupActive{
 	position:fixed;
 	top: 0;
 	left: 0;
@@ -122,56 +132,57 @@
 	right: 0;
 	min-width: 100%;
 	min-height: 100%;
-	display: none;	
+	display: block;	
 	z-index:5;
 }
-.popup-win:target{
+/*.popup-win:target{
 	display: block;
-}
+}*/
 .overlay{
 	background-color: rgba(0, 5, 15, .6);
-	position:absolute;
+	position:fixed;
+	z-index:10;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
 	min-width: 100%;
 	min-height: 100%;
-	z-index:10;
 }
 .modal-window{
-	position:relative;
+	position:absolute;
 	z-index:15;
-	margin: 60px auto 0;
-	width: 370px;
+	width: 360px;
 	background: #eff3f7;
 	border-radius: 5px;
 	box-shadow: 0 5px 10px #000;
 	overflow: hidden;
 }
-.add-form-title{
-	font-family: 'fira_sansregular', sans-serif;
-	font-size: 25px;
+.add-form-title-block{
 	background:#48cbe8;
-	color:#fff;
-	font-weight: 400;
-	margin: 0 0 20px 0;
-	padding: 10px;
-	border-bottom: 10px solid #67dffa;	
+	margin: 0 0 5px 0;
+	border-bottom: 10px solid #67dffa;
 }
+	.add-form-title{
+		font-family: 'fira_sansregular', sans-serif;
+		font-size: 25px;
+		font-weight: 400;
+		margin: 0;
+		padding: 5px 10px 0;
+		color:#fff;
+		float:left;
+	}
 	.close-modalwin{
 		float:right;
-		text-decoration: none;
-		border-radius: 50%;
-		border: 2px solid #fff;
-		color: #fff;
-		font-size: 16px;
-		padding: 0 11px;
-		position:relative;
+		margin: 12px 10px 0 0;
+		text-indent: -2000px;
+		background:url(../../img/close.png) no-repeat left center;
+		width: 26px;
+		height: 26px;
 	}
 .field-wrapper{
 	margin: 0 auto;
-	width: 325px;
+	width: 320px;
 }
 .label-for-input{
 	display: block;
@@ -179,14 +190,16 @@
 }
 .project-name-field, .project-img-field, .project-url-field, .project-description-field, .file-btn-text{
 	border: 1px solid #48cbe8;
-	width: 325px;
-	text-indent: 10px;
-	padding: 5px 0;
+	width: 100%;
+	text-indent: 15px;
+	font-size:13px;
+	color:#54ceea; 
+	padding: 10px 0;
 	margin-bottom: 10px;
 	border-radius: 5px;
 }
 .project-description-field{
-	height: 115px;
+	height: 85px;
 }
 input::-webkit-input-placeholder{
 	color:#54ceea;
@@ -205,21 +218,27 @@ input:-ms-input-placeholder{
 }
 	input.login-field::-webkit-input-placeholder{
 		font-size:17px;
+		text-indent: 20px;
 	}
 	input.login-field:-moz-placeholder{
 		font-size:17px;
+		text-indent: 20px;
 	}
 	input.login-field:-ms-input-placeholder{
 		font-size:17px;
+		text-indent: 20px;
 	}
 	input.password-field::-webkit-input-placeholder{
 		font-size:17px;
+		text-indent: 20px;
 	}
 	input.password-field:-moz-placeholder{
 		font-size:17px;
+		text-indent: 20px;
 	}
 	input.password-field:-ms-input-placeholder{
 		font-size:17px;
+		text-indent: 20px;
 	}
 textarea::-webkit-input-placeholder{
 	color:#54ceea;
@@ -322,4 +341,21 @@ textarea:-ms-input-placeholder{
 	color:#49bb7b;
 	text-decoration: none;
 	float:right;
+}
+
+
+/************ tooltips style *************/
+.error-field{
+	border: 1px solid #f97e76;
+	background: #f97e76;
+	position: relative;
+}
+div#qTip{
+	background: #f97e76;
+	color:#fff;
+	padding: 2px;
+	display: : none;
+	position: absolute;
+	left: -50px;
+	z-index:15;
 }

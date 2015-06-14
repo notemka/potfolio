@@ -4,13 +4,13 @@
 	text-align: center;
 	font-weight: 400;
 	font-size: 27px;
-	margin: 0 0 20px 0;
-	padding: 20px 0;
-	border-bottom: 20px solid #67dffa;
+	margin: 0 0 40px 0;
+	padding: 40px 0;
+	border-bottom: 15px solid #67dffa;
 }
 .contacts-form{
 	margin: 0 auto;
-	width: 450px;
+	width: 403px;
 }
 .name-box, .email-box{
 	display: inline-block;
@@ -27,34 +27,32 @@
 	width: 100%;	
 }
 .form-item{
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	display: inline-block;
 	width: 100%;
 }
-.name-field,.email-field,.message-field, .img-code, .capcha{
-	padding: 5px;
+.name-field,.email-field,.message-field, .img-code{
+	padding: 10px 5px;
+	font-size:13px;
+	color:#54ceea; 
+	box-sizing: border-box;
 	border: 1px solid #54ceea;
 	border-radius: 5px;
 }
+.name-field, .email-field{
+	width: 190px;
+}
 .email-field{
 	float: right;
-	width: 190px;
 }
 .message-field{
 	height: 180px;
 	width: 100%;
 }
-.capcha{
-	width: 190px;
-	height: 85px;
-	background: #fff;
-	margin: 0;
-	display: inline-block;
-	overflow: hidden;
+.g-recaptcha{
+	/*width: 190px;*/
+	margin-bottom: 10px;
 }
-	.g-recaptcha{
-		width: 190px;
-	}
 .img-code{
 	float:right;
 }
@@ -62,7 +60,8 @@
 	display: block;
 	float: left;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 20px;
+	/*width: 120px;*/
 	color:#fff;
 	font-size:19px;
 	font-family: 'fira_sansbook';
