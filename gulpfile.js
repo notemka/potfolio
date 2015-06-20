@@ -46,6 +46,9 @@ gulp.task('js', function(){
 gulp.task('watch', function(){
 	gulp.watch(['./app/*.html'], ['html']);
 	gulp.watch(['./app/css/*.css'], ['css']);
+	gulp.watch(['./app/css/projects/*.css'], ['css']);
+	gulp.watch(['./app/css/contacts/*.css'], ['css']);
+	gulp.watch(['./app/css/authorization/*.css'], ['css']);
 	gulp.watch(['./app/js/*.js'], ['js']);
 });
 

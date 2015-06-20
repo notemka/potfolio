@@ -48,21 +48,21 @@
 			<div class="form-contacts-title">
 				У вас интересный проект? Напишите мне
 			</div>
-			<form action="POST" class="contacts-form">
+			<form action="POST" class="contacts-form" id = "form">
 				<ul class="form-list">
 					<li class="form-item">
 						<div class="name-box clearfix">
 							<label for="name" class="label-for-input">Имя</label>
-							<input type="text" name="name" class="name-field" placeholder="Как к вам обращаться">
+							<input type="text" name="name" class="name-field" data-validation = "name" placeholder="Как к вам обращаться">
 						</div>
 						<div class="email-box">
 							<label for="email" class="label-for-input">Email</label>
-							<input type="email" name="email" class="email-field" placeholder="Куда мне писать">
+							<input type="email" name="email" class="email-field" data-validation = "email" placeholder="Куда мне писать">
 						</div>
 					</li>
 					<li class="form-item">
 						<label for="message" class="label-for-input">Сообщение</label>
-						<textarea name="message" id="" class="message-field" placeholder="Кратко в чем суть"></textarea>
+						<textarea name="message" id="" class="message-field" data-validation = "msg" placeholder="Кратко в чем суть"></textarea>
 					</li>
 					<li class="form-item">
 						<!-- <label for="capcha-block" class="label-for-input">Введите код, указанный на картинке</label>
@@ -92,6 +92,7 @@
 </footer>
 <script src="bower/jquery/dist/jquery.min.js"></script>
 <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+<script src="js/tooltips.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

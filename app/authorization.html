@@ -10,12 +10,12 @@
 <body>
 <div class="wrapper clearfix">
 	<div class="form-wrapper">
-		<form action="POST" class="authorization-form">
+		<form action="POST" class="authorization-form" id="form">
 			<h2 class="form-title">Авторизируйтесь</h2>
 			<label class="login" for="input-login">Логин</label>
-				<input type="text" id = "input-login" class="login-field" placeholder = "Введите логин">
+				<input type="text" id = "input-login" class="login-field" data-validation="user-name" placeholder = "Введите логин">
 			<label class="password" for="input-password">Пароль</label>
-				<input type="password" id = "input-password" class="password-field" placeholder = "Введите пароль">
+				<input type="password" id = "input-password" class="password-field" data-validation="user-email" placeholder = "Введите пароль">
 			<input type="submit" class="enter-btn" value = "Войти">
 		</form>
 	</div>
@@ -27,6 +27,7 @@
 </footer>
 <script src="bower/jquery/dist/jquery.min.js"></script>
 <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+<script src="js/tooltips.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

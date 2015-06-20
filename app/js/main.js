@@ -1,8 +1,8 @@
 $('input[placeholder], textarea[placeholder]').placeholder();
 // $('#popup').bPopup();
 
-(function(){
-	var app = { 
+(function () {
+	var app = {
 
 		// ИНИЦИАЛИЗАЦИЯ 
 
@@ -16,7 +16,6 @@ $('input[placeholder], textarea[placeholder]').placeholder();
 			$('#open-popup-btn').on('click', this.popupOpen);
 			$('#popup-overlay').on('click', this.popupClose);
 			$('#close-popup').on('click', this.popupBtnClose);
-			$('#add-submit').on('click', this.addSubmit);
 		},
 
 		// МОДАЛЬНОЕ ОКНО
@@ -54,8 +53,7 @@ $('input[placeholder], textarea[placeholder]').placeholder();
 					animateDuration = 300;
 
 				popup.fadeOut(animateDuration);
-		},
-	};
-
-app.init();
+			}
+		};
+	app.init();
 }());
