@@ -1,5 +1,4 @@
 $('input[placeholder], textarea[placeholder]').placeholder();
-// $('#popup').bPopup();
 
 (function () {
 	var app = {
@@ -8,6 +7,7 @@ $('input[placeholder], textarea[placeholder]').placeholder();
 
 		init: function (){
 			this.setUpListeners();
+			this.fileUpLoad();
 		},
 
 		// ЗАПУСК  СОБЫТИЙ
@@ -46,14 +46,25 @@ $('input[placeholder], textarea[placeholder]').placeholder();
 
 		// закрытие окна по клику на кнопку закрытия
 		popupBtnClose: function (e){
-				e.preventDefault();
+			e.preventDefault();
 
-				var $this = $(this),
-					popup = $this.closest('#popup'),
-					animateDuration = 300;
+			var $this = $(this),
+				popup = $this.closest('#popup'),
+				animateDuration = 300;
 
-				popup.fadeOut(animateDuration);
-			}
-		};
+			popup.fadeOut(animateDuration);
+		},
+		
+		// загрузка изображения
+		fileUpLoad: function(){
+			$('fileupload').fileupload({
+				url: '../upload.php',
+				dataType: 'json',
+				success: function(data){
+					$('#fileurl, #filename').val(data.name);
+				}
+			})
+		}
+	};
 	app.init();
 }());

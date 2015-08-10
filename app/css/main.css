@@ -49,15 +49,30 @@ html, body{
 	overflow: hidden;
 }
 .header-wrapper{
-	max-width: 1200px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 	.logo{
 		float: left;
 	}
-		.logo-img{
+	.logo-link{
+		display: inline-block;
+		text-decoration: none;
+		vertical-align: middle;
+		text-align: center;	
+		font-family: 'fira_sansmedium';
+		line-height: 1.3em;
+	}
+		/*.logo-img{
 			vertical-align: middle;	
-		}
+		}*/
+	.logo__text{
+		font-size: 25px;
+	}
+	.logo__text-second{
+		font-size: 0.8em;
+		float: left;
+	}
 	.social-btn{
 		float: right;
 		max-width: 300px;
@@ -171,15 +186,11 @@ html, body{
 				color: #fff;
 				padding: 5px 0 5px 15px; 
 			}
-
-			.contacts-item.email{
-				background: url(../img/email.png) no-repeat 18% 50% #41b9d4;
-			}
 			.contacts-item.telephone{
-				background: url(../img/telephone.png) no-repeat 18% 50% #48cbe8;
+				background: url(../img/telephone.png) no-repeat 18% 50% #41b9d4;
 			}
 			.contacts-item.skype{
-				background: url(../img/skype.png) no-repeat 18% 50% #51daf8;	
+				background: url(../img/skype.png) no-repeat 18% 50% #48cbe8;	
 				border-radius: 0 0 5px 5px;		
 			}
 				.contacts-link{
@@ -329,10 +340,10 @@ html, body{
 	    height: 32px;
 	    background-position: -56px -119px;
 	}
-		.login-btn:hover{
+		.login-btn:hover, .unlock-btn{
 			background: url(../img/unlock.png);
 		}
 	.footer-inf{
-		text-align: center;
+		float: right;
 		margin: 0;
 	}
