@@ -7,22 +7,20 @@
 	<link rel="shortcut icon" href="img/favicon.ico"/>
 	<script type="text/javascript" src="js/modernizr.custom.57296.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js"></script>
-</head>	
+</head>
 <body>
 <div class="wrapper clearfix">
 	<header class="page-header">
-		<div class="header-wrapper">
+		<div class="header-wrapper clearfix">
 			<div class="logo">
 				<a href="" class="logo-link">
-					<img class="logo-img" src="img/logo.png" alt="">
-					<span class="hidden">Потфолио</span>
+					<div class="logo__text">Эмма Хайруллина</div>
+					<div class="logo__text-second">веб-разработчик</div>
 				</a>
 			</div>
 			<div class="social-btn">
-				<a class="social-btn-link sprite vk" href=""><span class="hidden">VK</span></a>
-				<a class="social-btn-link sprite twitter" href=""><span class="hidden">Twitter</span></a>
-				<a class="social-btn-link sprite facebook" href=""><span class="hidden">Facebook</span></a>
-				<a class="social-btn-link sprite git" href=""><span class="hidden">Git</span></a>
+				<a class="social-btn-link sprite vk" href="http://vk.com/id16335891"><span class="hidden">VK</span></a>
+				<a class="social-btn-link sprite git" href="https://github.com/notemka"><span class="hidden">Git</span></a>
 			</div>
 		</div>
 	</header>
@@ -38,7 +36,6 @@
 			<div class="contacts">
 				<ul class="contacts-list">
 					<li class="contacts-item">Контакты</li>
-					<li class="contacts-item email"><a class="contacts-link" href="mailto:emma.saitgaraeva@gmail.ru">emma.saitgaraeva</a></li>
 					<li class="contacts-item telephone"><a class="contacts-link" href="tel:+79374815725">+79274817925</a></li>
 					<li class="contacts-item skype"><a class="contacts-link" href="skype:notemka?call">notemka</a></li>
 				</ul>
@@ -50,6 +47,18 @@
 			</div>
 			<form action="POST" class="contacts-form" id = "form">
 				<ul class="form-list">
+					<li class="alert-box" id="alert-success-item">
+						<div class="success-alert-box" id="mail-success-alert">
+							<a href="" class="close-success-alert">x</a>
+							<div class="success-inf">Письмо успешно отправлено.</div>
+						</div>
+					</li>
+					<li class="alert-box" id="alert-error-item">
+						<div class="error-alert-box" id="mail-error-alert">
+							<a href="" class="close-error-alert">x</a>
+							<div class="error-inf">Произошла ошибка, повторите попытку.</div>
+						</div>
+					</li>
 					<li class="form-item">
 						<div class="name-box clearfix">
 							<label for="name" class="label-for-input">Имя</label>
@@ -87,7 +96,7 @@
 		<a class="login-btn sprite" href="authorization.html">
 			<span class="hidden">Войти</span>
 		</a>
-		<p class="footer-inf">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
+		<p class="footer-inf">&copy; 2015 Эмма Хайруллина</p>
 	</div>
 </footer>
 <script src="bower/jquery/dist/jquery.min.js"></script>

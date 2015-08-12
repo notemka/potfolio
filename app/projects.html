@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
@@ -7,22 +7,20 @@
 	<link rel="shortcut icon" href="img/favicon.ico"/>
 	<script type="text/javascript" src="js/modernizr.custom.57296.js"></script>
 	<script type="text/javascript" src="js/selectivizr-min.js"></script>
-</head>	
+</head>
 <body>
 <div class="wrapper clearfix">
 	<header class="page-header">
-		<div class="header-wrapper">
+		<div class="header-wrapper clearfix">
 			<div class="logo">
 				<a href="" class="logo-link">
-					<img class="logo-img" src="img/logo.png" alt="">
-					<span class="hidden">Потфолио</span>
+					<div class="logo__text">Эмма Хайруллина</div>
+					<div class="logo__text-second">веб-разработчик</div>
 				</a>
 			</div>
 			<div class="social-btn">
-				<a class="social-btn-link sprite vk" href=""><span class="hidden">VK</span></a>
-				<a class="social-btn-link sprite twitter" href=""><span class="hidden">Twitter</span></a>
-				<a class="social-btn-link sprite facebook" href=""><span class="hidden">Facebook</span></a>
-				<a class="social-btn-link sprite git" href=""><span class="hidden">Git</span></a>
+				<a class="social-btn-link sprite vk" href="http://vk.com/id16335891"><span class="hidden">VK</span></a>
+				<a class="social-btn-link sprite git" href="https://github.com/notemka"><span class="hidden">Git</span></a>
 			</div>
 		</div>
 	</header>
@@ -39,7 +37,6 @@
 			<div class="contacts">
 				<ul class="contacts-list">
 					<li class="contacts-item">Контакты</li>
-					<li class="contacts-item email"><a class="contacts-link" href="mailto:emma.saitgaraeva@gmail.ru">emma.saitgaraeva</a></li>
 					<li class="contacts-item telephone"><a class="contacts-link" href="tel:+79374815725">+79274817925</a></li>
 					<li class="contacts-item skype"><a class="contacts-link" href="skype:notemka?call">notemka</a></li>
 				</ul>
@@ -50,38 +47,38 @@
 			<ul class="projects-list">
 				<li class="project-item">
 					<a href="" class="project-link">
-						<img class = "site-img" src="img/site.png" alt="">
+						<img class = "site-img" src="img/first.png" alt="">
 						<div class="animate-block">
 						</div>
-						<h3 class="animate-block-name">название сайта1</h3>
+						<h3 class="animate-block-name">Сайт портфолио</h3>
 					</a>
-					<a href="" class="site-name">www.site1.ru</a>
+					<a href="http://emmahr.ru" class="site-name">emmahr.ru</a>
 					<div class="project-inf">
-						Информация о проекте 1 превью 2 строки
+						Первый пробный проект: сайт-портфолио
 					</div>
 				</li>
 				<li class="project-item">
 					<a href="" class="project-link">
-						<img class = "site-img" src="img/site2.png" alt="">
+						<img class = "site-img" src="img/second.png" alt="">
 						<div class="animate-block">
 						</div>
-						<h3 class="animate-block-name">название сайта2</h3>
+						<h3 class="animate-block-name">"ЭплShop"</h3>
 					</a>
-					<a href="" class="site-name">www.site2.ru</a>
+					<a href="http://shop.emmahr.ru" class="site-name">shop.emmahr.ru</a>
 					<div class="project-inf">
-						Информация о проекте 1 превью 2 строки
+						Второй пробный проект: Интернет-магазин
 					</div>
 				</li>
 				<li class="project-item">
 					<a href="" class="project-link">
-						<img class = "site-img" src="img/site3.png" alt="">
+						<img class = "site-img" src="img/third.png" alt="">
 						<div class="animate-block">
 						</div>
-						<h3 class="animate-block-name">название сайта3</h3>
+						<h3 class="animate-block-name">Генератор водяных знаков</h3>
 					</a>
-					<a href="" class="site-name">www.site3.ru</a>
+					<a href="http://nvo87.ru/wm-generator/" class="site-name">nvo87.ru/wm-generator</a>
 					<div class="project-inf">
-						Информация о проекте 1 превью 2 строки
+						Первая командная работа
 					</div>
 				</li>
 				<li class="project-item">
@@ -105,7 +102,7 @@
 		</div>
 	</div>
 
-<!-- Модальное окно -->
+	<!-- Модальное окно -->
 
 	<div class="popup-modal-win" id="popup">
 		<div class="overlay" id="popup-overlay"></div>
@@ -115,25 +112,27 @@
 				<a href="" class="close-modalwin" id="close-popup">x</a>
 			</div>
 			<form method="" action="mailto:emma.saitgaraeva@gmail.com" class="field-wrapper" id="form">
-				<div class="error-box" id="error-popup">
-					<span class="error-text">Ошибка!</span>
-					<a href="" class="close-error-alert">x</a>
-					<div class="error-inf">Невозможно добавить проект.</div>
+				<div class="error-alert">
+					<div class="error-alert-box" id="error-popup">
+						<span class="error-text">Ошибка!</span>
+						<a href="" class="close-error-alert">x</a>
+						<div class="error-inf">Невозможно добавить проект.</div>
+					</div>
 				</div>
 				<label for="input-name" class="label-for-input">Название проекта</label>
-					<input type="text" name = "name" id="input-name" class="project-name-field" data-validation="project-name" placeholder="Введите название">
-				<label for="input-img" class="label-for-input file-label">
+				<input type="text" name = "name" id="input-name" class="project-name-field" data-validation="project-name" placeholder="Введите название">
+				<label for="fileupload" class="label-for-input file-label">
 					<span class="file-btn-name">
 						Картинка проекта
 					</span>
-					<input class="fake-file-field" id="fake-field" placeholder="Загрузите изображение">
-					<input type="file" name = "image" id="input-img" class="project-img-field" data-validation="file" placeholder="Загрузите изображение">
+					<input class="fake-file-field" id="fileurl" name="fileurl" placeholder="Загрузите изображение">
+					<input type="file" name = "file[]" id="fileupload" class="project-img-field" data-validation="file" placeholder="Загрузите изображение">
 				</label>
-					
+
 				<label for="input-url" class="label-for-input">URL проекта</label>
-					<input type="text" name = "url" id="input-url" class="project-url-field" data-validation="project-url" placeholder="Добавьте ссылку">
+				<input type="text" name = "url" id="input-url" class="project-url-field" data-validation="project-url" placeholder="Добавьте ссылку">
 				<label for="input-description" class="label-for-input">Описание</label>
-					<textarea name="description" id="input-description" class="project-description-field" data-validation="project-description" placeholder="Пара слов о вашем проекте"></textarea>
+				<textarea name="description" id="input-description" class="project-description-field" data-validation="project-description" placeholder="Пара слов о вашем проекте"></textarea>
 				<input type="submit" class="add-project-btn" id="add-submit" value="Добавить">
 			</form>
 		</div>
@@ -151,12 +150,15 @@
 		<a class="login-btn sprite" href="authorization.html">
 			<span class="hidden">Войти</span>
 		</a>
-		<p class="footer-inf">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
+		<p class="footer-inf">&copy; 2015 Эмма Хайруллина</p>
 	</div>
 </footer>
 <script src="bower/jquery/dist/jquery.min.js"></script>
 <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 <script src="js/tooltips.js"></script>
+<script src="bower/jquery-file-upload/js/vendor/jquery.ui.widget.js"></script>
+<script src="bower/jquery-file-upload/js/jquery.iframe-transport.js"></script>
+<script src="bower/jquery-file-upload/js/jquery.fileupload.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

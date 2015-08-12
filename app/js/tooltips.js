@@ -170,7 +170,7 @@ $(document).ready(function() {
             isValid = true;     // если не пустое
         } else {
             $this.tooltips({
-                content : 'Введите email',
+                content : 'В чем суть',
                 position : 'left'
             });
             $this.addClass('error-field');
@@ -252,17 +252,15 @@ $.fn.tooltips = function (options) {
     // изменение положения тултипа по рисайзу окна браузера
     $(window).on('resize', function(){
         var 
-            tooltips = ('.tooltip');
-            
-        var tooltipsArray = [];     // массив из всех созданных тултипов
+            tooltipsArray = [];     // массив из всех созданных тултипов
 
-        tooltips.each(function(){
+        $('.tooltip').each(function(){
             tooltipsArray.push($(this));
         });
 
         $('.tooltipstered').each(function(index){
             var 
-                position = $(this).data('data-tooltip-position');
+                position = $(this).data('tooltip-position');
             _positionIt($(this), tooltipsArray[index], position);
         });
     });

@@ -4,7 +4,8 @@
     "jquery": "1.11",
     "normalize-css": "~3.0.3",
     "modernizr-browser": "~1.0.1",
-    "jquery-placeholder": "~2.1.2"
+    "jquery-placeholder": "~2.1.2",
+    "jquery-file-upload": "~9.10.4"
   },
   "devDependencies": {
     "jquery-placeholder": "~2.1.2"

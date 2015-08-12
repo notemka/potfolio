@@ -1,0 +1,15 @@
+{
+  "name": "libs/package_name",
+  "description": "vendor libs",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Emma Khayrullina",
+      "email": "emma.saitgaraeva@gmail.com"
+    }
+  ],
+  "require": {
+    "phpmailer/phpmailer": "v5.2.10"
+  }
+}
