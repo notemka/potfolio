@@ -32,6 +32,9 @@ gulp.task('useref', function () {
 		.pipe(assets)
 		.pipe(gulpif('*.js', uglify()))
 		.pipe(gulpif('*.css', minifyCss({compability: 'ie8'})))
+		.pipe(gulpif('app/js/*.js', uglify()))
+		.pipe(gulpif('app/css/*.css', minifyCss({compability: 'ie8'})))
+		.pipe(gulpif('app/css/**/*.css', minifyCss({compability: 'ie8'})))
 		.pipe(assets.restore())
 		.pipe(useref())
 		.pipe(gulp.dest('dist')); //прописываем новые пути
