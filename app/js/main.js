@@ -1,3 +1,4 @@
+$('input[placeholder], textarea[placeholder]').placeholder();
 (function () {
 	var app = {
 
@@ -123,5 +124,5 @@
 		}
 	};
 	app.init();
-	//$("input['placeholder']", "textarea['placeholder']").placeholder();
+	//$('input[placeholder], textarea[placeholder]').placeholder();
 }());
