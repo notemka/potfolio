@@ -23,10 +23,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 	if(empty($name) || empty($email) || empty($message)) {
 		$answer = 'Заполните все поля';
-//	}
-//	if else(!check_captcha(SECRET_KEY, $capcha, $ip)){
-//		$answer = 'Вы не правильно вввели капчу';
-	}else {
+	}
+	else if(!check_captcha(SECRET_KEY, $capcha, $ip)){
+		$answer = 'Вы не правильно вввели капчу';
+	} else {
 		$mail = new PHPMailer();
 		$mail->isSendMail();
 		$mail->CharSet = 'UTF-8';

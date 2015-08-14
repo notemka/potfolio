@@ -45,14 +45,14 @@ $(document).ready(function() {
     file.each(function(){
         var 
             $this = $(this),
-            fakeImgField = $('#fake-field'),
+            fakeImgField = $('#fileurl'),
             notEmptyField = !!$this.val();
 
         if(notEmptyField){
             isValid = true;
         } else {
             $this.tooltips({
-                content : 'Введите картинку проекта',
+                content : 'Вложите изображение проекта',
                 position : 'left'
             });
             fakeImgField.addClass('error-field');

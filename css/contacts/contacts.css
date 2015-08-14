@@ -31,7 +31,7 @@
 	display: inline-block;
 	width: 100%;
 }
-.name-field,.email-field,.message-field, .img-code{
+.field, .img-code{
 	padding: 10px 5px;
 	font-size:13px;
 	color:#54ceea; 
@@ -50,7 +50,6 @@
 	width: 100%;
 }
 .g-recaptcha{
-	/*width: 190px;*/
 	margin-bottom: 10px;
 }
 .img-code{
@@ -69,6 +68,10 @@
 	border-radius: 5px;
 	background-color: #48cbe8;
 	box-shadow: 0 4px 0 #3ba8c0;
+}
+.send-btn:active,.clear-btn:active{
+	margin-top: 5px;
+	box-shadow: none;
 }
 .clear-btn{
 	background:#849db5;

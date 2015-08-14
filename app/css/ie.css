@@ -1,4 +1,8 @@
-.no-rgba .animate-block{
+.no-opacity .animate-block{
+	background-color: #4191bb;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+}
+.no-opacity .animate-block:hover{
 	background-color: #4191bb;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=80)";
 }

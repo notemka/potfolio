@@ -70,6 +70,10 @@
 	background-color: #48cbe8;
 	box-shadow: 0 4px 0 #3ba8c0;
 }
+.send-btn:active,.clear-btn:active{
+	margin-top: 5px;
+	box-shadow: none;
+}
 .clear-btn{
 	background:#849db5;
 	box-shadow: 0 4px #687b8f;

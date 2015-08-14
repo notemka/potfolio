@@ -19,9 +19,9 @@
 <?php if($page == "portfolio"): ?>
 	<script src="../bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 	<script src="../js/tooltips.js"></script>
-	<script src="../bower/jquery-file-upload/js/vendor/jquery.ui.widget.js"></script>
-	<script src="../bower/jquery-file-upload/js/jquery.iframe-transport.js"></script>
-	<script src="../bower/jquery-file-upload/js/jquery.fileupload.js"></script>
+	<script src="../bower/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
+	<script src="../bower/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
+	<script src="../bower/blueimp-file-upload/js/jquery.fileupload.js"></script>
 	<script src="../js/file-upload.js"></script>
 <?php endif; ?>
 

@@ -6,45 +6,8 @@ $(document).ready(function() {
 
         var $this = $(this);
         validateThis($this);
-
-        // if(validateThis($this)) {
-        //     postFormData($this, function(data){
-        //         // if (data.status){
-        //         //     console.log('все ок');
-        //         //     //появление попапа success
-        //         // } else{
-        //         //     console.log('что топошло не так');
-        //         //     //появление попапа error
-        //         // }
-        //         // regPopup = data.status ?
-        //     });
-        // }
     });
 });  // --> ready end
-
-    //
-    
-// function postFormData(form, successCallback){
-//     var
-//         host        = form.attr('action'),
-//         regFields   = form.find('[name]'),
-//         dataObject  = {};
-
-//     if(!host) {
-//         console.log('установи атрибут экшн для своей формы!');
-//     }
-
-//     regFields.each(function(){
-//         var
-//             $this = $(this),
-//             value = $this.val(),
-//             name = $this.attr('name');
-
-//         dataObject[name] = value;
-//     });
-
-//     $.post(host, dataObject, successCallback);
-// };
 
     // ВАЛИДАЦИЯ 
     
@@ -82,14 +45,14 @@ $(document).ready(function() {
     file.each(function(){
         var 
             $this = $(this),
-            fakeImgField = $('#fake-field'),
+            fakeImgField = $('#fileurl'),
             notEmptyField = !!$this.val();
 
         if(notEmptyField){
-            isValid = true;     // если не пустое
+            isValid = true;
         } else {
             $this.tooltips({
-                content : 'Введите картинку проекта',
+                content : 'Вложите изображение проекта',
                 position : 'left'
             });
             fakeImgField.addClass('error-field');
@@ -103,7 +66,7 @@ $(document).ready(function() {
             notEmptyField = !!$this.val();
 
         if(notEmptyField){
-            isValid = true;     // если не пустое
+            isValid = true;
         } else {
             $this.tooltips({
                 content : 'Введите URL проекта',
@@ -119,7 +82,7 @@ $(document).ready(function() {
             notEmptyField = !!$this.val();
 
         if(notEmptyField){
-            isValid = true;     // если не пустое
+            isValid = true;
         } else {
             $this.tooltips({
                 content : 'Введите описание проекта',
@@ -135,7 +98,7 @@ $(document).ready(function() {
             notEmptyField = !!$this.val();
 
         if(notEmptyField){
-            isValid = true;     // если не пустое
+            isValid = true;
         } else {
             $this.tooltips({
                 content : 'Введите имя',
@@ -151,7 +114,7 @@ $(document).ready(function() {
             notEmptyField = !!$this.val();
 
         if(notEmptyField){
-            isValid = true;     // если не пустое
+            isValid = true;
         } else {
             $this.tooltips({
                 content : 'Введите email',
@@ -167,7 +130,7 @@ $(document).ready(function() {
             notEmptyField = !!$this.val();
 
         if(notEmptyField){
-            isValid = true;     // если не пустое
+            isValid = true;
         } else {
             $this.tooltips({
                 content : 'В чем суть',
@@ -183,7 +146,7 @@ $(document).ready(function() {
             notEmptyField = !!$this.val();
 
         if(notEmptyField){
-            isValid = true;     // если не пустое
+            isValid = true;
         } else {
             $this.tooltips({
                 content : 'Введите ваше имя',
@@ -199,7 +162,7 @@ $(document).ready(function() {
             notEmptyField = !!$this.val();
 
         if(notEmptyField){
-            isValid = true;     // если не пустое
+            isValid = true;
         } else {
             $this.tooltips({
                 content : 'Введите ваш email',
@@ -209,6 +172,7 @@ $(document).ready(function() {
             isValid = false;
         }    
     });
+	   return isValid;
 
 };
 

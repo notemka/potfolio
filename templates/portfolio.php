@@ -3,8 +3,8 @@
 		<a href="" class="project-link">
 			<img class = "site-img" src="../img/first.png" alt="">
 			<div class="animate-block">
+				<h3 class="animate-block-name">Сайт портфолио</h3>
 			</div>
-			<h3 class="animate-block-name">Сайт портфолио</h3>
 		</a>
 		<a href="http://emmahr.ru" class="site-name">emmahr.ru</a>
 		<div class="project-inf">
@@ -15,8 +15,8 @@
 		<a href="" class="project-link">
 			<img class = "site-img" src="../img/second.png" alt="">
 			<div class="animate-block">
+				<h3 class="animate-block-name">ЭплShop</h3>
 			</div>
-			<h3 class="animate-block-name">ЭплShop</h3>
 		</a>
 		<a href="http://shop.emmahr.ru" class="site-name">shop.emmahr.ru</a>
 		<div class="project-inf">
@@ -27,8 +27,8 @@
 		<a href="" class="project-link">
 			<img class = "site-img" src="../img/third.png" alt="">
 			<div class="animate-block">
+				<h3 class="animate-block-name">WMGenerator</h3>
 			</div>
-			<h3 class="animate-block-name">WMGenerator</h3>
 		</a>
 		<a href="http://nvo87.ru/wm-generator/" class="site-name">nvo87.ru/wm-generator</a>
 		<div class="project-inf">
@@ -72,19 +72,19 @@
 				</div>
 			</div>
 			<label for="input-name" class="label-for-input">Название проекта</label>
-			<input type="text" name = "name" id="input-name" class="project-name-field" data-validation="project-name" placeholder="Введите название">
+			<input type="text" name = "name" id="input-name" class="field project-name-field" data-validation="project-name" placeholder="Введите название">
 			<label for="fileupload" class="label-for-input file-label">
 				<span class="file-btn-name">
 					Картинка проекта
 				</span>
 				<input class="fake-file-field" id="fileurl" name="fileurl" placeholder="Загрузите изображение"  value="">
-				<input type="file" name = "file[]" id="fileupload" class="project-img-field" data-validation="file">
+				<input type="file" name="files[]" id="fileupload" class="project-img-field" data-validation="file"  value="">
 			</label>
 
 			<label for="input-url" class="label-for-input">URL проекта</label>
-			<input type="text" name = "url" id="input-url" class="project-url-field" data-validation="project-url" placeholder="Добавьте ссылку">
+			<input type="text" name = "url" id="input-url" class="field project-url-field" data-validation="project-url" placeholder="Добавьте ссылку">
 			<label for="input-description" class="label-for-input">Описание</label>
-			<textarea name="description" id="input-description" class="project-description-field" data-validation="project-description" placeholder="Пара слов о вашем проекте"></textarea>
+			<textarea name="description" id="input-description" class="field project-description-field" data-validation="project-description" placeholder="Пара слов о вашем проекте"></textarea>
 			<input type="submit" class="add-project-btn" id="add-submit" value="Добавить">
 		</form>
 	</div>

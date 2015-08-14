@@ -79,21 +79,23 @@ $('input[placeholder], textarea[placeholder]').placeholder();
 				dataType = 'json',
 				url = './php/mail_send.php';
 
-			$.ajax({
-				url: url,
-				data: formData,
-				dataType: dataType,
-				type: 'POST'
-			})
-			.done(function(data){
-				console.log(data);
+			if(validateThis(form) === true){
+				$.ajax({
+					url: url,
+					data: formData,
+					dataType: dataType,
+					type: 'POST'
+				})
+				.done(function(data){
+					console.log(data);
 
-				app.successMessage(form);
-				form.trigger('reset');
-			})
-			.fail(function(data){
-				app.errorMessage(form);
-			})
+					app.successMessage(form);
+					form.trigger('reset');
+				})
+				.fail(function(data){
+					app.errorMessage(form);
+				})
+			}
 		},
 
 		// сообщение при успешной отправке письма
@@ -124,5 +126,4 @@ $('input[placeholder], textarea[placeholder]').placeholder();
 		}
 	};
 	app.init();
-	//$('input[placeholder], textarea[placeholder]').placeholder();
 }());
